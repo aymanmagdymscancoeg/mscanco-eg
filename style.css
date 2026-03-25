@@ -31,20 +31,20 @@ ul {
 }
 
 .custom-header.scrolled {
-    background: #03279e !important;  /* نفس لون الفوتر */
+    background: #5c72bb !important;  /* نفس لون الفوتر */
     box-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 /* نص اسم الشركة */
 .company-name {
-    color: #d4af37 !important; /* Gold */
+    color: #ffbc73 !important; /* Gold */
     font-weight: 700;
     font-size: 20px;
 }
 
 /* روابط القائمة */
 .nav-link {
-    color: #d4af37 !important; /* Gold */
+    color: #ffbc73 !important; /* Gold */
     font-weight: 500;
     font-size: 16px;
 }
@@ -172,8 +172,8 @@ ul {
 
 /* ========== FOOTER ========== */
 .footer {
-    background: #03279e !important; /* نفس اللون الداكن */
-    color: #d4af37 !important; /* Gold */
+    background: #5c72bb !important; /* نفس اللون الداكن */
+    color: #ffbc73 !important; /* Gold */
     text-align: center;
     padding: 25px 10px;
     margin-top: 40px;
