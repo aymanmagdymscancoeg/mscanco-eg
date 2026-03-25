@@ -21,28 +21,37 @@ ul {
 
 
 
-/* ========== HEADER (FIXED + DARK TRANSPARENT) ========== */
+/* =========================================================
+   HEADER (Transparent → Solid on Scroll)
+   ========================================================= */
 .custom-header {
-    background: rgba(0, 0, 0, 0.7) !important;
-    backdrop-filter: blur(8px);
-    padding: 10px 0 !important;
+    background: transparent !important;
+    padding: 12px 0 !important;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
+.custom-header.scrolled {
+    background: #111 !important;  /* نفس لون الفوتر */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+/* نص اسم الشركة */
 .company-name {
-    color: #ffffff !important;
+    color: #d4af37 !important; /* Gold */
     font-weight: 700;
     font-size: 20px;
 }
 
+/* روابط القائمة */
 .nav-link {
-    color: #ffffff !important;
+    color: #d4af37 !important; /* Gold */
     font-weight: 500;
     font-size: 16px;
 }
 
 .nav-link.active,
 .nav-link:hover {
-    color: #00b3ff !important;
+    color: #f7d879 !important; /* Gold Light */
 }
 
 
@@ -62,10 +71,7 @@ ul {
 
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0,0,0,0.55);
 }
 
@@ -106,7 +112,7 @@ ul {
 
 
 
-/* ========== PRODUCT CAROUSEL (6 PRODUCTS) ========== */
+/* ========== PRODUCT CAROUSEL ========== */
 .carousel-container {
     overflow: hidden;
     width: 100%;
@@ -152,7 +158,7 @@ ul {
 
 
 
-/* ========== WHY-US SECTION (IMAGE + TEXT) ========== */
+/* ========== WHY-US SECTION ========== */
 .why-us ul {
     padding-left: 18px;
 }
@@ -166,8 +172,8 @@ ul {
 
 /* ========== FOOTER ========== */
 .footer {
-    background: #0b3d6d !important;
-    color: white !important;
+    background: #111 !important; /* نفس اللون الداكن */
+    color: #d4af37 !important; /* Gold */
     text-align: center;
     padding: 25px 10px;
     margin-top: 40px;
