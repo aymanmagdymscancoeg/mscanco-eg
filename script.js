@@ -1,20 +1,13 @@
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
+    let cards = document.querySelectorAll(".card");
 
-let cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+        let pos = card.getBoundingClientRect().top;
+        let screen = window.innerHeight;
 
-cards.forEach(card => {
-
-let position = card.getBoundingClientRect().top;
-
-let screenPosition = window.innerHeight / 1.2;
-
-if(position < screenPosition){
-
-card.style.opacity = "1";
-card.style.transform = "translateY(0)";
-
-}
-
-});
-
+        if (pos < screen - 100) {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
 });
