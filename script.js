@@ -11,11 +11,14 @@ window.addEventListener("scroll", function () {
         }
     });
 });
-window.addEventListener("scroll", function () {
-    let header = document.querySelector(".custom-header");
-    if (window.scrollY > 80) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector(".custom-header");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 80) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
 });
